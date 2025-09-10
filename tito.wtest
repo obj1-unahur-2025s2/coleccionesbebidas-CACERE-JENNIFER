@@ -28,5 +28,15 @@ describe "test de tito" {
         tito.consumir(5, cianuro)
         assert.equals(0,tito.velocidad())
     }
-
+    test "tito consume un licuado de manzana y mandarina"
+    {licuado.agregar(manzana)
+    licuado.agregar(mandarina)
+    tito.consumir(3000,licuado)
+    assert.equals(189000,tito.velocidad())
+    }
+    test"tito consume agua saborizada de wisky"{
+        aguaSaborizada.saborizar(wisky)
+        tito.consumir(8,aguaSaborizada)
+        assert.equals(12.67,tito.velocidad())
+    }
 }
